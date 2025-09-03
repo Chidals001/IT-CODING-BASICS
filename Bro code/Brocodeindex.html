@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Brocodestyle.css">
+</head>
+<body>
+        
+            <!--<div id ="container">
+            click click
+
+            </div>
+            <ul style="margin-top:5px;">
+                <li class="list">EMMANUEL</li>
+                <li class="list">LUCY</li>
+                <li class="list">FAVOUR</li>
+                <li class="list">RICKY</li>
+            </ul>
+        -->
+            <div id="container">
+                <div id = "left">
+                <div><div>EMEKA</div></div>
+                <div><div>IFEANYI</div></div>
+                <div><div>LUCY</div></div>
+                <div><div>EMMANEL</div></div>
+            </div>
+
+
+            <div id = "right">
+                <div><div>EMEKA</div></div>
+                <div><div>IFEANYI</div></div>
+                <div><div>LUCY</div></div>
+                <div><div>EMMANEL</div></div>
+            </div>
+
+
+            <div id = "bottom">
+                <div><div>EMEKA</div></div>
+                <div><div>IFEANYI</div></div>
+                <div><div>LUCY</div></div>
+                <div><div>EMMANEL</div></div>
+            </div>
+
+
+            <div id = "top">
+                <div><div>EMEKA</div></div>
+                <div><div>IFEANYI</div></div>
+                <div><div>LUCY</div></div>
+                <div><div>EMMANEL</div></div>
+            </div>
+
+            </div>
+            
+                
+            
+        
+
+        
+    
+        
+    <script>
+
+
+    /* const container = document.querySelector("#container");
+    const list = document.querySelectorAll("li");
+
+    let eventActive = false;
+
+    function showList(){
+        console.log("you successfully showed list");
+        container.textContent = "click again to unshow the list";
+        list.forEach(element => element.style.display = "block")
+
+    }
+
+    function unShowList(){
+        console.log("you successfully removed the list");
+        container.textContent = "click again to show the list";
+        list.forEach(element => element.style.display = "none")
+
+    }
+
+    container.addEventListener("click",function(){
+        if(eventActive){
+            unShowList();
+            eventActive = false;
+        }
+        else{
+            showList();
+            eventActive = true;
+        }
+    })
+        */
+
+        const  showTop = document.getElementById("top")
+        const  showLeft = document.getElementById("left")
+        const  showBottom = document.getElementById("bottom")
+        const  showRight = document.getElementById("right")
+        const  container = document.getElementById("container")
+
+
+      
+       function displayLeft(){
+        container.style.display = "block"
+        showLeft.style.display = "block"
+       }
+
+       function displayRight(){
+        container.style.display = "block"
+        showRight.style.display = "block"
+       }
+       
+       function displayBottom(){
+        container.style.display = "block"
+        showBottom.style.display = "block"
+       }
+       
+       function displayTop(){
+        container.style.display = "block"
+        showTop.style.display = "block"
+       }
+
+       function offContainer(){
+        container.style.display = "none"
+       }
+
+       
+       
+
+
+       /* document.body.addEventListener("keydown",function(){
+        let value = event.key
+        
+        if(value === "ArrowDown"){
+            console.log("good")
+        }
+        else{
+            console.log(value)
+        }
+       })
+         */
+        document.body.addEventListener("keydown",function(){
+            let value = event.key;
+            if (value === "ArrowLeft"){
+                displayRight();
+            }
+
+            else if (value === "ArrowUp"){
+                displayBottom();
+            }
+
+            else if (value === "ArrowRight"){
+                displayLeft();
+            }
+
+            else if (value === "ArrowDown"){
+                displayTop();
+            }
+
+            else if (value === "x"){
+                offContainer()
+            }
+            else{
+                alert("press x to clear all")
+            }
+
+        })
+       
+    
+
+
+    
+    
+
+    
+    
+    
+    </script>
+</body>
+</html>

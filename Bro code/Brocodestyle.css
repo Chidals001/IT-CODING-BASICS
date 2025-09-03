@@ -1,0 +1,132 @@
+    /*#container{
+        width: 250px;
+        border: 2px solid;
+        padding: 15px;
+        margin: auto;
+        background-color: rgb(75, 245, 202);
+        border-radius: 40px;
+        box-shadow: 5px 4px 4px;
+        text-align: center;
+        font-size: x-large;    
+        margin-bottom: 0px;
+    }
+
+    ul li{
+        border: 1px solid;
+        list-style-type: none;
+        text-align: center;
+        width: 200px;
+        margin: auto;
+        background-color: rgb(204, 193, 193);
+        border-radius: 25px;
+        padding: 6px;
+        display: none;
+    }*/
+    body{
+     padding: 0px;
+     margin: 0px;
+     box-sizing: border-box;
+     background-color: rgb(243, 134, 95);
+    }
+
+    #container{
+        display: block;
+    }
+
+    #left{
+        border: 2px solid ;
+        width: 25%;
+        height: 100vh;
+        display: none;
+        
+    }
+
+    #left div{
+        border: 1px solid gray;
+        height: 25%;
+        text-align: center;
+        background-color:rgb(94, 93, 93);
+    }
+    #left div div{
+        border: none;
+        display: inline-block;
+        padding-top: 60px;
+        color: rgb(0, 255, 149);
+        font-size: 18px;
+    }
+
+
+
+    #right{
+        border: 2px solid ;
+        width: 25%;
+        height: 100vh;
+        position:fixed;
+        right: 0px;
+        display: none;   
+    }
+
+    #right div{
+        border: 1px solid gray;
+        height: 25%;
+        text-align: center;
+        background-color:rgb(94, 93, 93);
+    }
+
+    #right div div{
+        border: none;
+        display: inline-block;
+        padding-top: 60px;
+        color: rgb(0, 255, 149);
+        font-size: 18px;
+    }
+
+
+
+    #bottom{
+        border: 2px solid grey ;
+        position: fixed;
+        width: 100%;
+        bottom: 0px;
+        display: none;    
+    }
+
+    #bottom div{
+        border: 1px solid gray;
+        text-align: center;
+        background-color:rgb(94, 93, 93);
+    }
+
+    #bottom div div{
+        border: none;
+        display: inline-block;
+        padding:12px;
+        color: rgb(0, 255, 149);
+        font-size: 18px;
+        transition: 0.3s;
+    }
+
+
+
+    #top{
+        border: 2px solid grey ;
+        position: fixed;
+        width: 100%;
+        top: 0px;
+        display: none;
+           
+    }
+
+    #top div{
+        border: 1px solid gray;
+        text-align: center;
+        background-color:rgb(94, 93, 93);
+    }
+
+    #top div div{
+        border: none;
+        display: inline-block;
+        padding:12px;
+        color: rgb(0, 255, 149);
+        font-size: 18px;
+    }
